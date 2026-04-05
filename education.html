@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Education | ArbyHairDesign</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&family=Playfair+Display:ital,wght@0,400;0,600;1,400&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+  <!-- ===============================
+       NAVIGATION
+  ================================ -->
+  <header>
+    <nav class="navbar subpage-nav">
+      <div class="nav-brand">A.H.D</div>
+      <div class="nav-links">
+        <a href="index.html">Home</a>
+        <a href="about.html">About</a>
+        <a href="services.html">Services</a>
+        <a href="booking.html">Booking</a>
+        <a href="education.html" class="active">Education</a>
+        <a href="contact.html">Contact</a>
+      </div>
+      <button class="hamburger" aria-label="Toggle Navigation">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+    </nav>
+  </header>
+
+  <main>
+    <!-- ===============================
+         PAGE HEADER
+    ================================ -->
+    <header class="page-header fade-in">
+      <h1>Learn With Arby</h1>
+      <p style="max-width:600px; margin: 1rem auto 0; text-transform:none; letter-spacing: normal;">Whether you're a new stylist or a seasoned pro, my education programs are designed to elevate your craft, grow your clientele, and unlock your full creative potential.</p>
+    </header>
+
+    <!-- ===============================
+         EDUCATION TIERS
+    ================================ -->
+    <section class="section-padding fade-in">
+      <div class="container">
+        <div class="education-cards">
+          
+          <div class="edu-card">
+            <span class="edu-tier">Mentorship</span>
+            <h3>Shadow Day</h3>
+            <h4>Starting at $500</h4>
+            <p>1-on-1 Private Education. Watch live demos, ask any business or formula questions. Coffee & lunch included.</p>
+            <a href="contact.html" class="btn">Inquire Now →</a>
+          </div>
+
+          <div class="edu-card">
+            <span class="edu-tier">Community</span>
+            <h3>Group Workshop</h3>
+            <h4>Starting at $350</h4>
+            <p>Hands-On class + Live Model Demo. Interactive, immersive, and fundamentally focused.</p>
+            <a href="#tour" class="btn">Get Tickets →</a>
+          </div>
+
+          <div class="edu-card">
+            <span class="edu-tier">Collaboration</span>
+            <h3>Host a Class</h3>
+            <h4>Email for Pricing</h4>
+            <p>Bring Arby to your city. Host an immersive workshop directly at your salon or venue.</p>
+            <a href="contact.html" class="btn">Contact Us →</a>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ===============================
+         TOUR DATES
+    ================================ -->
+    <section id="tour" class="section-padding fade-in" style="padding-top:0;">
+      <div class="container tour-list">
+        <h2 class="text-center" style="font-size:2.5rem; margin-bottom:3rem;">Upcoming Events</h2>
+        
+        <div class="tour-item">
+          <div class="tour-date">Sept 12, 2025</div>
+          <div class="tour-title">Fundamentals Workshop — Miami, FL</div>
+          <a href="#" class="btn">Get Tickets</a>
+        </div>
+
+        <div class="tour-item">
+          <div class="tour-date">Oct 4, 2025</div>
+          <div class="tour-title">Signature Blonding Class — New York, NY</div>
+          <a href="#" class="btn">Get Tickets</a>
+        </div>
+
+        <div class="tour-item">
+          <div class="tour-date">Nov 1, 2025</div>
+          <div class="tour-title">Shadow Day (Private) — Los Angeles, CA</div>
+          <a href="contact.html" class="btn">Inquire</a>
+        </div>
+
+        <div class="tour-item">
+          <div class="tour-date">Dec 6, 2025</div>
+          <div class="tour-title">Group Workshop — Chicago, IL</div>
+          <a href="#" class="btn">Get Tickets</a>
+        </div>
+        
+      </div>
+    </section>
+
+    <!-- ===============================
+         TESTIMONIAL
+    ================================ -->
+    <section class="testimonial fade-in">
+      <div class="container">
+        <p class="testimonial-quote">"This was THE best hair education experience I've ever had. Arby was so generous with her knowledge and incredibly inspiring for my own business."</p>
+        <span class="testimonial-author">— @stylist_handle</span>
+      </div>
+    </section>
+
+    <!-- ===============================
+         EDUCATION NEWSLETTER
+    ================================ -->
+    <section class="newsletter-section section-padding fade-in">
+      <div class="container">
+        <p>Be the first to know about new class dates and digital masterclasses.</p>
+        <form class="newsletter-form" onsubmit="event.preventDefault(); alert('Subscribed!');">
+          <input type="email" placeholder="Enter your email address" required>
+          <button type="submit">Subscribe</button>
+        </form>
+      </div>
+    </section>
+
+  </main>
+
+  <footer class="site-footer">
+    <div class="container text-center">
+      <div class="footer-bottom">
+        &copy; 2025 ArbyHairDesign. All Rights Reserved.
+      </div>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>

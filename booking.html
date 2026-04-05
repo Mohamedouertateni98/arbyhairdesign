@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Booking | ArbyHairDesign</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&family=Playfair+Display:ital,wght@0,400;0,600;1,400&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+  <!-- ===============================
+       NAVIGATION
+  ================================ -->
+  <header>
+    <nav class="navbar subpage-nav">
+      <div class="nav-brand">A.H.D</div>
+      <div class="nav-links">
+        <a href="index.html">Home</a>
+        <a href="about.html">About</a>
+        <a href="services.html">Services</a>
+        <a href="booking.html" class="active">Booking</a>
+        <a href="education.html">Education</a>
+        <a href="contact.html">Contact</a>
+      </div>
+      <button class="hamburger" aria-label="Toggle Navigation">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+    </nav>
+  </header>
+
+  <main>
+    <!-- ===============================
+         PAGE HEADER
+    ================================ -->
+    <header class="page-header fade-in">
+      <h1>Reserve Your Seat</h1>
+      <p>We can't wait to see you</p>
+    </header>
+
+    <!-- ===============================
+         BOOKING STEPS & WIDGET
+    ================================ -->
+    <section class="section-padding fade-in">
+      <div class="container">
+        
+        <div class="booking-steps">
+          <div class="step">
+            <div class="step-num">01</div>
+            <h4>Choose Your Service</h4>
+          </div>
+          <div class="step">
+            <div class="step-num">02</div>
+            <h4>Pick Date & Time</h4>
+          </div>
+          <div class="step">
+            <div class="step-num">03</div>
+            <h4>Confirm & Deposit</h4>
+          </div>
+        </div>
+
+        <form class="booking-form" onsubmit="event.preventDefault(); alert('Appointment Requested! You will receive confirmation shortly.');">
+          <div class="form-group">
+            <label>Full Name</label>
+            <input type="text" class="form-control" required placeholder="Jane Doe">
+          </div>
+          
+          <div class="form-group" style="display: grid; grid-template-columns: 1fr 1fr; gap: 1rem;">
+            <div>
+              <label>Email Address</label>
+              <input type="email" class="form-control" required placeholder="jane@example.com" style="width:100%;">
+            </div>
+            <div>
+              <label>Phone Number</label>
+              <input type="tel" class="form-control" required placeholder="(555) 000-0000" style="width:100%;">
+            </div>
+          </div>
+          
+          <div class="form-group">
+            <label>Service Requested</label>
+            <select class="form-control" required>
+              <option value="">-- Select a Service --</option>
+              <option>Full Highlights ($550+)</option>
+              <option>Balayage / Lived-In Color ($500+)</option>
+              <option>Base Color / Grey Coverage ($175)</option>
+              <option>Cut & Color ($650+)</option>
+              <option>Consultation (Extensions/Correction)</option>
+            </select>
+          </div>
+          
+          <div class="form-group">
+            <label>Preferred Date</label>
+            <input type="date" class="form-control" required>
+          </div>
+          
+          <div class="form-group">
+            <label>Special Requests / Notes</label>
+            <textarea class="form-control" placeholder="Tell me about your hair history..."></textarea>
+          </div>
+          
+          <button type="submit" class="btn btn-solid btn-full">Request Appointment</button>
+          <p class="text-center" style="font-size:0.8rem; margin-top:1rem; opacity:0.7;">You'll receive a confirmation email within 24 hours.</p>
+        </form>
+
+        <div class="cancellation-card">
+          <h4>Cancellation Policy</h4>
+          <p style="margin-top:0.5rem; font-size:0.95rem;">Cancellations require 48 hours notice. A 50% deposit is required to hold your appointment. No-shows will be charged in full.</p>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ===============================
+         FAQ ACCORDION
+    ================================ -->
+    <section class="section-padding fade-in" style="background:var(--color-offwhite);">
+      <div class="container faq-section">
+        <h2 class="text-center" style="font-size:2.5rem; margin-bottom:3rem;">Frequently Asked Questions</h2>
+        
+        <div class="faq-item">
+          <button class="faq-question">Do you take walk-ins?</button>
+          <div class="faq-answer">
+            <p>No, we operate strictly by appointment only to ensure every client receives the uninterrupted focus and time they deserve.</p>
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <button class="faq-question">What should I bring to my appointment?</button>
+          <div class="faq-answer">
+            <p>Reference photos are always welcome! Bring photos of what you love, and even photos of what you <em>don't</em> like, to help us align our vision.</p>
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <button class="faq-question">How long will my appointment take?</button>
+          <div class="faq-answer">
+            <p>It varies widely based on the service and your hair density. A standard lived-in color appointment usually takes between 3 to 4.5 hours. We never rush the process.</p>
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <button class="faq-question">Do you offer consultations?</button>
+          <div class="faq-answer">
+            <p>Yes, we offer both in-person and virtual consultations. These are mandatory for color correction services and new extension clients.</p>
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <button class="faq-question">What forms of payment do you accept?</button>
+          <div class="faq-answer">
+            <p>We accept all major credit cards, Apple Pay, Venmo, Zelle, and Cash.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container text-center">
+      <div class="footer-bottom">
+        &copy; 2025 ArbyHairDesign. All Rights Reserved.
+      </div>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
